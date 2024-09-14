@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
+import { motion, AnimatePresence } from "framer-motion";
+import NavbarAnimation from "../animation/NavbarAnimation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +14,12 @@ const Navbar = () => {
     { name: "FAQ", href: "#", current: false },
   ];
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
-
   return (
     <div>
       <nav className="bg-white">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[173vh] px-2 sm:px-6 lg:px-8">
+          {/* <div className="flex-1 mx-auto"> */}
+
           <div className="relative flex h-16 items-center justify-between">
             {/* Logo on the left side */}
             <div className="flex items-center justify-start">
@@ -76,7 +76,7 @@ const Navbar = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-sm font-quicksand text-black font-bold"
+                      className="text-sm font-quicksand text-black font-extrabold"
                     >
                       {item.name}
                     </a>
@@ -91,27 +91,18 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        {isOpen && (
-          <div className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <div>
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    className="block rounded-md px-3 py-2 text-base font-medium"
-                  >
-                    {item.name}
-                  </a>
-                </div>
-              ))}
-              <div className="bg-custom_red text-white font-quicksand font-semibold pt-2 pb-2 pr-3 pl-3">
-                <p>1800 789 123</p>
-              </div>
-            </div>
-          </div>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className="sm:hidden"
+              initial="hidden"
+              animate={isOpen ? "visible" : "hidden"}
+              exit="hidden"
+            >
+              <NavbarAnimation isToggled={isOpen} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </div>
   );

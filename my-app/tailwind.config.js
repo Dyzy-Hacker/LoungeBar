@@ -11,7 +11,8 @@ export default {
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
-      }
+      },
+      
     },
   },
   plugins: [],
