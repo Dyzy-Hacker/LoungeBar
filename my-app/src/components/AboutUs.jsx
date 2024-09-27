@@ -1,7 +1,6 @@
 import React from "react";
 import about1 from "../assets/images/about1.png";
 import about2 from "../assets/images/about2.png";
-import leafs from "../assets/images/leafs.png";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
@@ -67,11 +66,6 @@ const AboutUs = () => {
               Learn More
             </motion.button>
           </div>
-          <img
-            src={leafs}
-            alt="Leafs"
-            className="absolute sm:left-[151vh] sm:top-[140vh] sm:w-[50vh] w-[20vh] top-[265vh] left-[29vh] "
-          />
           <img
             src={about2}
             alt="Order food"
