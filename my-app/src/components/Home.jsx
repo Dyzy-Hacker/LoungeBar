@@ -1,7 +1,7 @@
 import React from "react";
 import home from "../assets/images/home.png";
-import shop from "../assets/images/shop.png";
-import { motion } from "framer-motion";
+import shop1 from "../assets/images/shop1.png";
+import { motion } from "framer-motion"; 
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
               className="flex bg-custom_red text-white py-3 px-6 mt-6 sm:mt-0 font-semibold"
             >
               Order Now
-              <img src={shop} alt="Order" className="py-1 pl-2" />
+              <img src={shop1} alt="Order" className="py-1 pl-2" />
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.1 }}

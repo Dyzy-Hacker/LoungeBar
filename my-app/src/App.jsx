@@ -1,12 +1,22 @@
 import React from "react";
-import { Navbar, Home, AboutUs } from "./components";
+import {
+  Navbar,
+  Home,
+  AboutUs,
+  ExploreFood,
+  Testimonials,
+  Footer,
+} from "./components";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Home />
-      <AboutUs/>
+      <AboutUs />
+      <ExploreFood />
+      <Testimonials />
+      <Footer />
     </div>
   );
 };
