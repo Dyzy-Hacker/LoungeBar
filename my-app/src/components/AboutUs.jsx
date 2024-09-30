@@ -1,6 +1,6 @@
 import React from "react";
-import about1 from "../assets/images/about1.png";
-import about2 from "../assets/images/about2.png";
+import burger2 from "../assets/images/burger2.jpg";
+import pancake1 from "../assets/images/pancake1.jpg";
 import ourstory from "../assets/images/ourstory.png";
 import { motion } from "framer-motion";
 
@@ -27,9 +27,9 @@ const AboutUs = () => {
             </motion.button>
           </div>
           <img
-            src={about1}
+            src={pancake1}
             alt="About"
-            className="w-[71vh] h-auto mt-8 lg:mt-0"
+            className="w-[75%] lg:w-[30%] h-auto mt-8 lg:mt-0 rounded-2xl"
           />
         </div>
       </div>
@@ -68,9 +68,9 @@ const AboutUs = () => {
             </motion.button>
           </div>
           <img
-            src={about2}
+            src={burger2}
             alt="Order food"
-            className="w-3/4 lg:w-1/3 h-auto mt-8 lg:mt-0"
+            className="w-[75%] lg:w-[30%] h-auto mt-8 lg:mt-0 rounded-2xl"
           />
         </div>
         <div className="relative flex justify-center mt-10">

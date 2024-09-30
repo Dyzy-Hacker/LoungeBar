@@ -1,7 +1,7 @@
 import React from "react";
-import home from "../assets/images/home.png";
 import shop1 from "../assets/images/shop1.png";
-import { motion } from "framer-motion"; 
+import burger1 from "../assets/images/burger1.jpg";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -35,9 +35,9 @@ const Home = () => {
           </div>
         </div>
         <img
-          src={home}
+          src={burger1}
           alt="Order food"
-          className="w-3/4 lg:w-1/3 h-auto mt-8 lg:mt-0"
+          className="w-[75%] lg:w-[30%] h-auto mt-8 lg:mt-0 rounded-2xl"
         />
       </div>
       <div className="mt-[5vh]">

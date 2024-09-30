@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
+import burger5 from "../assets/images/burger5.jpg";
+import pancake3 from "../assets/images/pancake3.jpg";
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const slides = [
-    "https://fakeimg.pl/360x260/",
-    "https://fakeimg.pl/350x260/",
-    "https://fakeimg.pl/340x260/",
-    "https://fakeimg.pl/330x260/",
-    "https://fakeimg.pl/320x260/",
-  ];
+  const slides = [burger5, pancake3];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,9 +31,9 @@ const Testimonials = () => {
 
   return (
     <div className="flex justify-center items-center h-[70vh] mt-10 bg-custom_red">
-      <div className="relative w-[100vh] h-[50vh] flex justify-center items-center">
-        <div id="default-carousel" className="relative w-full h-full">
-          <div className="relative w-full h-full overflow-hidden rounded-md">
+      <div className="relative w-full flex justify-center items-center max-w-5xl">
+        <div id="carousel" className="relative w-[80vh] h-[70vh] flex justify-center items-center">
+          <div className="relative w-[80%] h-[80%] flex justify-center items-center overflow-hidden rounded-md">
             {slides.map((slide, index) => (
               <div
                 key={index}
@@ -47,13 +43,14 @@ const Testimonials = () => {
               >
                 <img
                   src={slide}
-                  className="absolute w-full h-full object-cover rounded-md"
+                  className="w-full h-full object-contain rounded-md"
                   alt="Slide"
                 />
               </div>
             ))}
           </div>
 
+          {/* Dots for navigating between slides */}
           <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
             {slides.map((_, index) => (
               <button
@@ -70,7 +67,7 @@ const Testimonials = () => {
           {/* Previous Button */}
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 -translate-y-1/2 left-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white"
+            className="absolute top-1/2 -translate-y-1/2 left-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50 focus:ring-4 focus:ring-white"
           >
             <svg
               className="w-4 h-4 text-white"
@@ -90,9 +87,10 @@ const Testimonials = () => {
             <span className="sr-only">Previous</span>
           </button>
 
+          {/* Next Button */}
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 -translate-y-1/2 right-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 focus:ring-4 focus:ring-white"
+            className="absolute top-1/2 -translate-y-1/2 right-4 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50 focus:ring-4 focus:ring-white"
           >
             <svg
               className="w-4 h-4 text-white"

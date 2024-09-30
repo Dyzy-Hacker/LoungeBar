@@ -20,7 +20,11 @@ const ExploreFood = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 justify-items-center">
         {shop.map((item) => (
           <div key={item.id} className="flex flex-col items-start">
-            <img src={item.image} alt="Sandwich" />
+            <img
+              src={item.image}
+              alt=""
+              className="w-[250px] h-[260px] object-cover rounded-lg"
+            />
             <h3 className="mt-4 font-bold">{item.title}</h3>
             <p>{item.description}</p>
             <p className="text-lg font-semibold text-gray-800">
