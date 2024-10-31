@@ -9,11 +9,13 @@ const ExploreFood = () => {
           Explore Our Foods
         </h1>
         <p className="mt-4 text-lg lg:text-xl font-quicksand text-gray-600 text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
-          purus a odio finibus bibendum in sit <br /> amet leo. Mauris feugiat
-          erat tellus. Far far away, behind the word mountains, far from the
-          countries <br /> Vokalia and Consonantia, there live the blind texts.
-          Separated they live in Bookmarksgrove.
+          At West Side Lounge Bar, we take pride in our delicious food <br />
+          offerings, especially our mouthwatering burgers and fluffy pancakes. <br />
+          Our burgers are crafted with juicy, high-quality ingredients, served <br />
+          with a variety of toppings to satisfy any craving. And don’t miss our <br />
+          pancakes—light, airy, and perfect for brunch or a sweet treat any time <br />
+          of day. Come explore our menu and indulge in the flavors that keep our <br />
+          guests coming back for more! <br />
         </p>
       </div>
 

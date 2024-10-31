@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import burger5 from "../assets/images/burger5.jpg";
 import pancake3 from "../assets/images/pancake3.jpg";
+import burger6 from "../assets/images/burger6.jpg";
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const slides = [burger5, pancake3];
+  const slides = [burger5, pancake3, burger6];
 
   useEffect(() => {
     const interval = setInterval(() => {

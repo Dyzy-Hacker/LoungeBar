@@ -1,7 +1,7 @@
 import burger3 from "../assets/images/burger3.jpg";
 import pancake2 from "../assets/images/pancake2.jpg";
 import burger4 from "../assets/images/burger4.jpg";
-import burger5 from "../assets/images/burger5.jpg";
+
 
 const shop = [
   {

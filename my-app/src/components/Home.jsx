@@ -12,8 +12,12 @@ const Home = () => {
             Order food from <br /> your favourite lounge bar <br /> near you.
           </p>
           <p className="text-left lg:text-left text-lg lg:text-xl font-quicksand mb-6 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-            Etiam et purus a odio finibus bibendum amet leo.
+            Step into a world of taste and relaxation at West Side Lounge <br />
+            Bar.Indulge your cravings with our delectable menu! From our gourmet<br />
+            burgers, crafted with fresh, high-quality ingredients, to our<br />
+            irresistibly fluffy pancakes.Ordering is a breeze, so treat yourself<br />
+            to a delicious meal that will keep you coming back for more. Join us<br />
+            and experience food that delights in every bite!<br />
           </p>
 
           <div className="flex flex-col sm:flex-row sm:space-x-4 sm:mt-10 items-center sm:items-start">

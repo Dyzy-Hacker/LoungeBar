@@ -15,8 +15,12 @@ const AboutUs = () => {
               best ingredients.
             </p>
             <p className="text-left lg:text-left text-lg lg:text-xl font-quicksand mb-6 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Etiam et purus a odio finibus bibendum amet leo.
+              West Side Lounge Bar, we believe in the power of fresh, homemade
+              <br />
+              ingredients. Our commitment to quality means that every dish is
+              <br />
+              crafted with care and love, using only the finest ingredients.
+              <br />
             </p>
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -41,23 +45,29 @@ const AboutUs = () => {
               ingredients.
             </p>
             <p className="text-left lg:text-left text-lg lg:text-xl font-quicksand mb-6 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Etiam et purus a odio finibus bibendum in sit amet leo. <br />
-              Mauris feugiat erat tellus.Far far away, behind the word <br />
-              mountains, far from the countries Vokalia and Consonantia, <br />
-              there live the blind texts.
+              Experience the difference of homemade food at West Side Lounge{" "}
+              <br />
+              Bar. Visit us at the west side of Vevcani or call us to reserve
+              <br />
+              your table or place an order. Indulge in flavors that feel just
+              <br />
+              like home!
+              <br />
             </p>
             <p>
               <span>&#10004;</span>
-              Etiam sed dolor ac diam volutpat.
+              Homemade Goodness: From our rich sauces to our hand-crafted tacos,
+              every item on the menu is made from scratch.
             </p>
             <p>
               <span>&#10004;</span>
-              Etiam sed dolor ac diam volutpat.
+              Locally Sourced Ingredients: We prioritize fresh, local produce to
+              bring you vibrant flavors in every bite.
             </p>
             <p>
               <span>&#10004;</span>
-              Etiam sed dolor ac diam volutpat.
+              Culinary Passion: Our chefs pour their hearts into creating
+              delicious dishes that will leave you craving more.
             </p>
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -76,7 +86,9 @@ const AboutUs = () => {
         <div className="relative flex justify-center mt-10">
           <img src={ourstory} alt="Picture" className="w-full h-auto" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="text-white text-xl font-bold">Our Story</p>
+            <p className="text-white text-xl">
+            
+            </p>
           </div>
         </div>
       </div>
